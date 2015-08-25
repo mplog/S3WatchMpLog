@@ -1,0 +1,28 @@
+{
+  "name": "S3WatchMpLog",
+  "version": "1.0.0",
+  "description": "AWS Lambda script to notify the alert of mplog to slack.",
+  "main": "S3WatchMpLog.js",
+  "dependencies": {
+    "async"  : "latest", 
+    "request": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+  },
+  "author": "Hidekazu Miyamoto",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "http://git.gmf.io/mplog/S3WatchMpLog.git"
+  },
+  "keywords": [
+    "mplog",
+    "aws",
+    "s3",
+    "lambda",
+    "mysql",
+    "nodejs",
+    "slack"
+  ]
+}
