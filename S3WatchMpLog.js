@@ -15,7 +15,7 @@ exports.handler = function (event, context) {
     var key    = event.Records[0].s3.object.key;
     var size   = event.Records[0].s3.object.size;
     console.log('Getting object s3://' + bucket + '/' + key);
-    if ( size === 0 ) {
+    if (size === 0) {
         console.log('S3WatchMpLog skipping object of size zero');
         context.done(null,'');
     }
@@ -32,7 +32,7 @@ exports.handler = function (event, context) {
         async.each(items, function (item, callback) {
             if (item !== "") {
                 var obj = JSON.parse(item);
-                if (obj.command !== "Sleep" && obj.duration >= TIMEOUT) {
+                if (obj.info !== "" && obj.duration >= TIMEOUT) {
                     message += '```'
                         + 'id: '    + obj.id    + '\n' + 'date: '     + obj.date      + '\n'
                         + 'user: '  + obj.user  + '\n' + 'db: '       + obj.db        + '\n'
