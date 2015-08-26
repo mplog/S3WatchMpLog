@@ -14,7 +14,7 @@
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": "http://git.gmf.io/mplog/S3WatchMpLog.git"
+    "url": "https://github.com/mplog/S3WatchMpLog.git"
   },
   "keywords": [
     "mplog",
