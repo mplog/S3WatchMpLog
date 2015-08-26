@@ -1,10 +1,11 @@
 # S3WatchMpLog
 A Node.js AWS Lambda script that push mplogs alert to Slack.
+![slack sample](http://41.media.tumblr.com/049e2a063e088922d4e7aec2ea483542/tumblr_inline_ntmt1lpWsC1s8qrai_500.png)
 
 ## Get the code and prep it for the uploading to AWS
 * Clone the git repo
 ```bash
-git clone http://git.gmf.io/mplog/S3WatchMpLog.git
+git clone https://github.com/mplog/S3WatchMpLog.git
 cd S3WatchMpLog
 ```
 
